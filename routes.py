@@ -3,7 +3,6 @@ from sitemap import cluster
 
 
 app = Flask(__name__)
-app.secret_key = '45g897h54F#$@^4dsdDasf4'
 
 
 @app.route('/')
