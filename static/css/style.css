@@ -1,0 +1,26 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+body {
+    background-color: #F4F7FA;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+}
+
+a {
+    color: #3F414C;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000;
+}
+
+input {
+	border: 1px solid #000;
+}
+
+input:focus {
+    outline:none;
+}
