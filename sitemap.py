@@ -121,6 +121,7 @@ def cluster(url):
                 data['error'] = 'No URLs found in sitemap'
             else:
                 data['count'] = len(urls)
+                urls = [x.strip() for x in urls]
                 # cluster URLs
                 c = urlclustering.cluster(urls)
                 tmp = deepcopy(c['clusters'])

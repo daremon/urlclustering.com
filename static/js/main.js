@@ -19,7 +19,9 @@ function hideError(obj) {
 function cluster(url) {
   var res = {};
   $('#results').html('<img src="/static/images/loader.gif">');
+  $('#results').show();
   $('#go').prop('disabled', true)
+  $('#url').prop('disabled', true)
   $.ajax({
     type: 'GET',
     url: '/action/cluster',
@@ -31,6 +33,7 @@ function cluster(url) {
       $('#results').html(data.error);
     else
       $('#results').html(data.html);
+    $('#url').prop('disabled', false)
     $('#go').prop('disabled', false)
   });
 }

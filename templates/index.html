@@ -16,10 +16,11 @@
 
 {% block content %}
     <h1>urlclustering demo</h1>
-    This will read up to 10,000 URLs from a sitemap and cluster them (min_cluster_size=10).
+    This will read up to 10,000 URLs from a sitemap and cluster them (min_cluster_size=10).<br/>
+    See more here: <a href="https://github.com/daremon/urlclustering">https://github.com/daremon/urlclustering</a>
     <br/><br/>
     Website (or URL to a specific sitemap):
-    <input type="text" name="url" id="url" size="60" value="http://www.cssigniter.com" />
+    <input type="text" name="url" id="url" size="60" value="http://www.gatesnotes.com/" />
     <input type="button" id="go" value="GO" onclick="go()">
     <div id="results"></div>
 {% endblock %}
